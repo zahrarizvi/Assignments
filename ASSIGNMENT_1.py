@@ -22,15 +22,15 @@ a,b = b,a
 print(a,b)
 ######### Question-4 ###########
 ## python 2.x ##
-#print raw_input('Assignment 1 Question 4 part:') ## Error when run with python 3
+print raw_input('Assignment 1 Question 4 part:') ## Error when run with python 3
 ## python 3.x ##
 print(input('Assignment 1 Question 4 part:')) ## runs fine with both python 2 ,3 
 ######### Question-5 ###########
 ## part a ##
 print('Enter any 2 numbers in between 1-10:')
-e = int(input('number1:'))
-f = int(input('number2:'))
-z = int(e+f)
+e = eval(input('number1:'))
+f = eval(input('number2:'))
+z = e+f
 print("z=",z)
 ## part b ##
 result = print('result = ', z + 30)
