@@ -47,4 +47,4 @@ print('Now data type of a is:',type(a))
 print('Now value of a = ',a)
 a = float(a)
 print('Now data type of a is:',type(a))
-print('Now value of a = ',a)
+print('Now value of a = ',a) # The datatype changes but value remains same exept it changes it representation that is if converted to float from integer it will change from 1 = 1.0
