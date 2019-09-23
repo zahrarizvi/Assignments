@@ -56,14 +56,9 @@ elif (operation == 5):
 else:
     print("invalid")
 ############ Question-3 #############
-a = 10
-b = 20
-c = 30
-avg = (a+b+c)/3
-print("avg = ", avg)
-if(avg > a and avg > b and avg > c):
-    print("avg is higher than a,b,c")
-elif (avg > a and avg > b):
+a,b,c = 10,20,30
+avg = print("avg=", ((a+b+c)/3))
+if((avg > a and avg > b and avg > c) or (avg > a and avg > b)):
     print("avg is higher than a,b,c")
 elif (avg > a and avg > c):
     print("avg is higher than a,c")
@@ -115,3 +110,59 @@ while True:
     if count >=5:
         break  #Break is supposed to be with small b
 ############ Question-7 #############
+for i in range(6):
+    if (i==3 or i==6):
+        continue
+    print("Output:", i)
+############ Question-8 #############
+string = input("Enter string:")
+digits = letters = 0
+for i in string:
+    if i.isalpha():
+        letters+=1
+    elif i.isdigit():
+        digits+=1
+
+print("Letters",letters)
+print("Digits",digits)
+############ Question-9 #############
+## part-a ##
+#user = eval(input("Guess the lucky number:"))
+#while (user==False):
+#    print("continues")
+## part-b ##
+number = eval(input("Guess the lucky number:"))
+if (number == False):
+    answer = input("Do you want to guess again(Y/N)?")
+    while (number == False and answer == "Y"):
+        number = eval(input("Guess the lucky number:"))
+        if (number == True):
+            break
+        answer = input("Do you want to guess again(Y/N)?")
+else:
+    pass
+############ Question-10 #############
+counter = 1
+while counter <= 5:
+    print("Type in the", counter, "number")
+    num = eval(input("Guess the correct number"))
+    if(num == True):
+        print("Good guess")
+    else:
+        print("Try again")
+    counter = counter + 1
+else:
+    print("Game Over!")
+############ Question-11 #############
+counter = 1
+while counter <= 5:
+    print("Type in the", counter, "number")
+    num = eval(input("Guess the correct number"))
+    if(num == True):
+        print("Good guess")
+        break
+    else:
+        print("Sorry but that was not very successful")
+    counter = counter + 1
+else:
+    print("Game Over!")
